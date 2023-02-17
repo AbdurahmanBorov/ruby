@@ -1,0 +1,119 @@
+.reviews {
+    padding: 140px 0 192px;
+
+    @media (max-width: 565px) {
+        padding: 70px 0 140px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &-review {
+            text-align: center;
+            margin-bottom: 10px;
+            color: $orange;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+    
+            &:hover {
+                text-decoration: none;
+                color: $orange;
+                transform: scale(1.2);
+            }
+        }
+    
+        &-title {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+    }
+
+    &__block {
+        // height: 100%;
+        background: #FFF;
+        border: 2px solid rgba(254, 117, 63, 0.1);
+        border-radius: 10px;
+        padding: 30px;
+
+        @media (max-width: 565px) {
+            padding: 15px;
+        }
+
+        &_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;    
+        }
+
+        &_info {
+            display: flex;
+            align-items: center;
+        }
+
+        &_person {
+            margin-right: 30px;
+
+            @media (max-width: 565px) {
+                margin-right: 15px;
+            }
+        }
+
+        &_name {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+            margin-bottom: 5px;
+        }
+
+        &_proffesion {
+            opacity: 0.7;
+        }
+
+        &_img {
+            opacity: 0.1;
+
+            @media (max-width: 565px) {
+                display: none;
+            }
+        }
+
+        &_text {
+            opacity: 0.7;
+        }
+    }
+    .slick-slide {
+        margin: 0 27px;
+    }
+
+    .slick-list {
+        margin: 0 -27px;
+    }
+
+    .slick-dots {
+        bottom: -60px;
+
+        li {
+            list-style: none;
+        }
+
+        button {
+            font-size: 0;
+            // width: 12px;
+            // height: 12px;
+            background-color: #EDEDED;
+            border-radius: 50%;
+
+            :hover {
+                background-color: gray;
+            }
+        }
+        
+        .slick-active button {
+            background-color: #2E6EFF;
+        }
+    }
+}

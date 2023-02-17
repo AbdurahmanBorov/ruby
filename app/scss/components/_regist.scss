@@ -1,0 +1,117 @@
+.regist {
+    &__body {
+        position: relative;
+        background: #433E89;
+        border-radius: 10px;
+        padding: 70px 0;
+
+        @media (max-width: 565px) {
+            padding: 35px 0;
+        }
+
+        form {
+            position: relative;
+            text-align: center;
+            width: 740px;
+            margin: 0 auto;
+
+            @media (max-width: 991px) {
+                width: 450px;
+            }
+
+            @media (max-width: 565px) {
+                width: calc(100% - 10px);
+            }
+            
+            input {
+                padding: 0 180px 0 30px;
+                width: 740px;
+                height: 70px;
+                border-radius: 10px;
+
+                @media (max-width: 565px) {
+                    font-size: 12px;
+                }
+                
+                &::placeholder {
+                    opacity: 0.5;
+                }
+
+                @media (max-width: 991px) {
+                    width: 450px;
+                }
+
+                @media (max-width: 565px) {
+                    padding: 0 90px 0 10px;
+                    width: calc(100% - 10px);
+                    height: 50px;
+                }
+            }
+        
+            button {
+                border-radius: 10px;
+                position: absolute;
+                top: 7px;
+                right: 10px;
+                width: 160px;
+                height: 56px;
+
+                @media (max-width: 565px) {
+                    top: 7px;
+                    font-size: 12px;
+                    width: 80px;
+                    height: 36px;
+                }
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        font-size: 44px;
+        font-weight: 500;
+        line-height: 60px;
+        color: #FFF;
+        text-align: center;
+
+        @media (max-width: 767px) {
+            font-size: 34px;
+            line-height: 46px;
+        }     
+        
+        @media (max-width: 565px) {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+    &__text {
+        margin: 0 auto;
+        text-align: center;
+        color: #FFFFFF;
+        opacity: 0.7;
+        max-width: 580px;
+        padding-bottom: 70px;
+
+        @media (max-width: 767px) {
+            padding-bottom: 40px;
+            max-width: 400px;
+        }
+
+        @media (max-width: 565px) {
+            padding-bottom: 25px;
+            font-size: 14px;
+        }
+    }
+    
+    &__bg-img {
+        position: absolute;
+        right: 10px;
+        bottom: -40px;
+        
+        &_left {
+            top: 20px;
+            left: -105px;
+        }
+    }
+}

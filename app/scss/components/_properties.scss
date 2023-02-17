@@ -1,0 +1,145 @@
+.properties {
+        margin-bottom: 110px;
+
+        .row {
+            display: flex;
+        }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 70px;
+
+        &-all {
+            color: $orange;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                text-decoration: none;
+                color: $orange;
+                transform: scale(1.2);
+            }
+
+            @media (max-width: 565px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__body {
+        background: #FFFFFF;
+        box-shadow: 0px 8px 70px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    &__image {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__inner {
+        padding: 30px;
+
+        @media (max-width: 767px) {
+            padding: 20px;
+        }
+
+        &-titles {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        &-title {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+
+            @media (max-width: 767px) {
+                font-size: 18px;
+            }
+        }
+        // 
+        &-heart {
+            padding-left: 10px;
+            cursor: pointer;
+            
+            img {
+                &::before {
+                    color: #E61E14;
+                }
+            }
+        }
+        // 
+        &-subtitle {
+            display: flex;
+            align-items: center;
+            margin-bottom: 22px;
+
+            img {
+                margin-right: 10px;
+
+            }
+
+            span {
+                opacity: 0.7;
+            }
+        }
+
+        &-rooms {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            div {
+                margin-right: 20px;
+            }
+        }
+
+        &-room {
+            display: flex;
+            align-items: center;
+            margin-right: 5px;
+
+            img {
+                margin-right: 5px;
+            }
+        }
+
+        &-prices {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-price {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+            color: $orange;
+
+            @media (max-width: 767px) {
+                font-size: 18px;
+            }
+        }
+
+        &-button {
+            width: 138px;
+            height: 44px;
+
+            @media (max-width: 767px) {
+                font-size: 14px;
+                width: 100px;
+                height: 35px;
+            }
+        }
+    }
+}

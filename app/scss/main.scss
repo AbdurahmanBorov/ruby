@@ -1,0 +1,119 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 24px;
+	font-weight: 500;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+	background: #F9F9F9;
+	input, textarea {
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+
+	&._lock {
+		overflow: hidden;
+	}
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+.container {
+	max-width: 1140px;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #2E6EFF;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: 500;
+	border:none;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+
+	&:focus {
+		outline: none;
+	}
+
+	&:hover {
+		background-color: $orange;
+	}
+}
+
+h2 {
+	font-size: 44px;
+	font-weight: 600;
+	line-height: 61px;
+
+	@media (max-width: 767px) {
+		font-size: 32px;
+		line-height: 48px;
+	}
+
+	@media (max-width: 565px) {
+		font-size: 24px;
+		line-height: 32px;
+	}
+}
+
+@media (max-width: 991px) {
+
+}
+@media (max-width: 565px) {
+	
+}
+@media (max-width: 767px) {
+	
+}
+
+@import "components/header";
+@import "components/nav";
+@import "components/intro";
+@import "components/partners";
+@import "components/properties";
+@import "components/featured";
+@import "components/reviews";
+@import "components/regist";
+@import "components/footer";
+
+
+
+
+
+
+@import "media"; // Always at the end
